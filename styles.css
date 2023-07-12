@@ -203,6 +203,13 @@ h1{
     font-style: oblique;
     padding-bottom: 10px;
 }
+#psicologico{
+    color: #fff;
+    margin-left: 200PX;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding-bottom: 10px;
+}
 
 footer{
     grid-area: footer;
