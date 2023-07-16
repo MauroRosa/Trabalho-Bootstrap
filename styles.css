@@ -2,64 +2,41 @@ body {
     background-color: #201F1F;
   }
 
-
-header {
+header{
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+}
+nav {
     display: flex;
-    grid-area: header;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: #000000;
-    color: #ffffff;
     text-align: center;
     margin: 0;
-    padding: 2%;
     justify-content: center;
     font-family: fantasy;
 }
 
-#Buscar {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #fff;
-    border-radius: 5px;
-    height: 70px;
-    margin-top: 20px;
-    margin-left: 55px;
-    align-items: center;
-    width: 60vw;
-}
-  
-#search {
-    margin-bottom: 25px;
-    border: #fff;
-    border-radius: 5px;
-    height: 25px;
-    margin-right: 5%;
-    margin-top: 20px;
-    width: 60vw;
-}
-  
-.lupa {
-    flex-wrap: nowrap;
-    width: 45px;
-    height: 45px;
-    margin-right: 25px;
+.logo{
+    margin-right: 35px;
+    height: 50px;
+    width: 235px;
 }
 
 .navbar{
     border-bottom: #000000 solid 2px;
     background-color: #c41111;
+    align-items: center;
 }
 
 .navbar a{
     color: black;
     font-family: fantasy;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .navbar li{
-    margin-left: 10px;
-    
+    margin-left: 15px;
 }
 
 .policia{
@@ -67,7 +44,6 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 150px;
     margin: 10px;
-
 }
 
 .policia p{
@@ -94,15 +70,16 @@ header {
     }
 }
 
-  .img-animation {
+.img-animation {
     animation: img-animation 4s infinite;
 }
 
-  .pole {
+.pole {
     grid-column: 2;
     height: 220px;
     width: 220px;
-    margin-left: 100px;  
+    margin-left: 100px;
+     
 }
 
 .slash{
@@ -118,6 +95,7 @@ header {
     margin-left: 45px;;
     padding-bottom: 15px;
 }
+
 .slash p{
     grid-column: 2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -127,11 +105,11 @@ header {
     margin-left: 10px;
     margin-right: 20px;
 }
+
 #sl{
     height: 400px;
     width: 450px;
 }
-
 
 .sobrena{
     display: grid;
@@ -146,6 +124,7 @@ header {
     margin-left: 45px;;
     padding-bottom: 15px;
 }
+
 .sobrena p{
     grid-column: 2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -155,6 +134,7 @@ header {
     margin-left: 10px;
     margin-right: 20px;
 }
+
 #sb{
     height: 400px;
     width: 450px;
@@ -173,6 +153,7 @@ header {
     margin-left: 45px;;
     padding-bottom: 15px;
 }
+
 .psicol p{
     grid-column: 2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -182,6 +163,7 @@ header {
     margin-left: 10px;
     margin-right: 20px; 
 }
+
 #ps{
     height: 400px;
     width: 450px;
@@ -189,25 +171,57 @@ header {
 
 hr{
     color: #fff;
-    height: 10px;
+    height: 20px;
 }
 
 h1{
     color: #fff;
-    margin-left: 170PX;
+    margin-left: 75PX;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
-    padding-bottom: 10px;
-}
-#psicologico{
-    color: #fff;
-    margin-left: 200PX;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    font-size: 60px;
 }
 
-  
+form{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+legend{
+    color: #d1d0d0;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+label{
+    color: #c41111;
+    font-family: fantasy;
+    padding-top: 10px;
+    margin-left: 2px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    height: 50px;
+    background-color:#d1d0d0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button[type="submit"] {
+    width: 150px;
+    height: 50px;
+    background-color: #c41111;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+
 
 footer{
     grid-area: footer;
@@ -222,6 +236,7 @@ footer{
     border-top-style: solid;
     border-width: 3px;
     border-color: black;
+    width: 100%;
 }
 
 footer p:first-letter {font-size: 120%} 
@@ -234,3 +249,64 @@ footer a{
     text-decoration: none;
 }
 
+
+@media (max-width: 1100px){
+
+        .policia{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            }
+        .policia p{
+            margin: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+
+            }
+            h1{
+               margin-left: 20px;
+               font-size: 50px;
+            }
+        .pole{
+            margin: 20vw;
+            margin-bottom: 0px;
+            margin-top: 0px;
+
+            }
+        .slash{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #slas{
+            margin: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .sobrena{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #sobre{
+            margin: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .psicol{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        #psic{
+            margin: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        
+}
